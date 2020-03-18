@@ -2,7 +2,7 @@ An example of how to profile using the C <time.h> library
 Compares the performance of two LU-decomposition algorithms (Dolittle, and Gaussian)
 
 To compile on Linux type:
-    >> gcc -o test basic_matrix.c
+    >> gcc -o test basic_matrix.c -std=c11
     >> ./test
 
 
