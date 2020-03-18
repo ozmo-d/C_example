@@ -25,7 +25,7 @@ void profile() {
         LU_dolittle(&vector);
     }
     end_t = clock();
-    printf("Dolittle elapsed time %2.5fs\n", (double)(end_t - start_t) / CLOCKS_PER_SEC);
+    printf("Dolittle elapsed time %2.5fs\n", ((double)end_t - (double)start_t) / CLOCKS_PER_SEC);
 
     start_t = clock();
     for (int i=0; i<N_CASES; i++) {
@@ -35,7 +35,7 @@ void profile() {
         LU_gaussian(&vector);
     }
     end_t = clock();
-    printf("Gaussian elapsed time %2.5fs\n", (double)(end_t - start_t) / CLOCKS_PER_SEC);    
+    printf("Gaussian elapsed time %2.5fs\n", ((double)end_t - (double)start_t) / CLOCKS_PER_SEC);    
 }
 
 int main() {
